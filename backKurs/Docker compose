@@ -1,0 +1,29 @@
+services:
+  web:
+    build:
+      context: ./          # Путь к Dockerfile
+    ports:
+      - "8080:8080"                  # Проброс порта для веб-приложения
+    #volumes:
+      #- ./config:/app/config         # монтируем папку для просмотра внутри контейнера
+    depends_on:
+      - db                           # Сначала запускается база данных
+    environment:
+      DATABASE_URL: postgres://cookbook_user:secure_password@db:5432/cookbook
+      # Формат: postgres://<пользователь>:<пароль>@<хост>:<порт>/<база данных>
+
+  db:
+    image: postgres:alpine           # Готовый образ PostgreSQL для Alpine
+    environment:
+      POSTGRES_USER: myuser          # Пользователь базы данных
+      POSTGRES_PASSWORD: 123         # Пароль пользователя
+      POSTGRES_DB: postgres          # Имя базы данных
+    ports:
+      - "5432:5432"                  # Проброс порта для PostgreSQL
+    volumes:
+      - db_data:/var/lib/postgresql/data # Том для хранения данных
+      #- ./initdb:/docker-entrypoint-initdb.d # все скрипты из этой папки должны выполняться
+    restart: always                  # Перезапуск при сбое
+
+volumes:
+  db_data:                           # Том для базы данных
