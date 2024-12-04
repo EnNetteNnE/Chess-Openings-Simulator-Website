@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*чтобы доска была в самом центре экрана*/
+}
+
+.board {
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap; /*чтобы все ячейки, которые не помещаются в одну строку переносились на новую*/
+}
+
+.cell {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell img {
+    width: 48px;
+    height: 48px;
+    position: relative; /*чтобы удобно перемещать фигуру*/
+}
+
+.black {
+    background-color: #744e15;
+}
+
+.white {
+    background-color: #e8c48d;
+}
+
+.selected {
+    background-color: #7a0705;
+}
+
+.available {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #76cd76;
+}
+
+.blukaz {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: 2px solid #0ce0e0;
+}
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 20px;
+    margin-left: 10px;
+    background-color: lightgray;
+}
+
+.debuts {
+    height: calc(50vh - 30px);
+    padding: 20px;
+    margin-left: 10px;
+    background-color: lightgray;
+}
+
+.number {
+    height: 64px;
+    background-color:#0ce0e0;
+}
+
+.choose {
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    padding: 20px;
+    margin-left: 10px;
+    background-color: rgb(132, 203, 212);
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #e1e1e1;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .form {
+    max-width: 320px;
+    padding: 15px;
+    margin: 150px auto;
+    background-color: #ffffff;
+  }
+  
+  .input {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    
+    
+    border: 1px solid #1204d0;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+  }
+  
+  .bt {
+    display:grid ;
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 10px;
+    
+    border: 0;
+    background-color: #13a3c0;
+    cursor: pointer;
+    
+    font-family: inherit;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .butDeb { 
+    border-radius: 4px;
+    display:grid ;
+    padding: 3px 5px;
+    width: auto;
+    height: 25px;
+
+    border: 1px solid #1204d0;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: 5px;
+
+    font-family: inherit;
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .inpDeb { 
+    border-radius: 4px;
+    display:grid ;
+    padding: 2px 2px;
+    width: 160px;
+    height: 20px;
+
+    border: 1px solid #1204d0;
+    background-color: #ffffff;
+    cursor: auto;
+    margin-top: 5px;
+
+    font-family: inherit;
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .buttonwhite { 
+    border-radius: 4px;
+    width: 30px;
+    height: 20px;
+    border-radius: 20%;
+    border: 1px solid #1204d0;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  
+  .buttonblack { 
+    border-radius: 4px;
+    width: 30px;
+    height: 20px;
+    border-radius: 20%;
+    border: 1px solid #1204d0;
+    background-color: #000000;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .Delete {
+    background: rgba(235, 63, 63, 0.7);
+    color: #000000;
+    display: inline-block;
+    padding: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-right: 5px;
+    border: 1px solid #000000;
+  }
+
+  .Back {
+    background: rgba(180, 255, 139, 0.7);
+    color: #000000;
+    display: inline-block;
+    padding: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-right: 0px;
+    border: 1px solid #000000;
+  }
+
+  .vixod {
+    background: rgba(90, 0, 0, 0.7);
+    color: #ffffff;
+    display: inline-block;
+    padding: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 10px;
+    border: 1px solid #ffffff;
+  }
+
+  
+
+  .Back:hover, .Delete:hover, .buttonwhite:hover, .buttonblack:hover, .butDeb:hover, .vixod:hover {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 255, .2);
+  }
+
+  .Back:active, .Delete:active, .buttonwhite:active, .buttonblack:active, .butDeb:active, .vixod:active {
+    box-shadow: 1px 1px 4px 4px rgba(0, 0, 255, .2);
+  }
+
+  
+  

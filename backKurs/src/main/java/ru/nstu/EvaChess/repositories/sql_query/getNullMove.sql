@@ -1,0 +1,1 @@
+SELECT * FROM moves WHERE ?1 = moves.tree_id AND moves.number = 0 LIMIT 1
