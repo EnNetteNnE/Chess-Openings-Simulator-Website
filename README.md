@@ -10,6 +10,7 @@
 **Настройки сервера**
 * server.port=8080
 * server.host=localhost
+
 **Настройки базы данных**
 * spring.application.name=EvaChess
 * spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
