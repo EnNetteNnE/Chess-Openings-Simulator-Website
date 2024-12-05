@@ -7,14 +7,14 @@
 * Из рабочей дирректории frontKurs выполнить команду npm start
 * Выполнить команды для установки react, spring boot (опционально)
 
-####Настройки сервера
-server.port=8080
-server.host=localhost
-####Настройки базы данных
-spring.application.name=EvaChess
-spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
-spring.datasource.username=myuser
-spring.datasource.password=123
-spring.datasource.driver-class-name=org.postgresql.Driver
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.generate-ddl=true
+**Настройки сервера**
+* server.port=8080
+* server.host=localhost
+**Настройки базы данных**
+* spring.application.name=EvaChess
+* spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+* spring.datasource.username=myuser
+* spring.datasource.password=123
+* spring.datasource.driver-class-name=org.postgresql.Driver
+* spring.jpa.hibernate.ddl-auto=update
+* spring.jpa.generate-ddl=true
