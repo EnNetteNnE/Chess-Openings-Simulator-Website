@@ -9,35 +9,35 @@
 
 ***Скрины работы***
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/1.png" alt="Окно для регистрации/авторизации" width="350">
+<figcaption>Окно для регистрации/авторизации</figcaption>
+<img src="/img/1.png" alt="Окно для регистрации/авторизации" width="500">
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/2.png" alt="Предупреждение о неверной длине" width="350">
+<figcaption>Предупреждение о неверной длине</figcaption>
+<img src="/img/2.png" alt="Предупреждение о неверной длине" width="500">
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/3.png" alt="Предупреждение о повторяющемся пользователе" width="350">
+<figcaption>Предупреждение о повторяющемся пользователе</figcaption>
+<img src="/img/3.png" alt="Предупреждение о повторяющемся пользователе" width="500">
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/4.png" alt="Ввод неверных данных при попытке входа на сайт" width="350">
+<figcaption>Ввод неверных данных при попытке входа на сайт</figcaption>
+<img src="/img/4.png" alt="Ввод неверных данных при попытке входа на сайт" width="500">
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/5.png" alt="Успешная регистрация пользователя" width="350">
+<figcaption>Успешная регистрация пользователя</figcaption>
+<img src="/img/5.png" alt="Успешная регистрация пользователя" width="500">
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/6.png" alt="Приветственное окно" width="350">
+<figcaption>Приветственное окно</figcaption>
+<img src="/img/6.png" alt="Приветственное окно" width="500">
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/7.png" alt="Создание дебюта" width="350">
+<figcaption>Создание дебюта</figcaption>
+<img src="/img/7.png" alt="Создание дебюта" width="500">
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/8.png" alt="Просмотр и дополнение дебютного дерева" width="350">
+<figcaption>Просмотр и дополнение дебютного дерева</figcaption>
+<img src="/img/8.png" alt="Просмотр и дополнение дебютного дерева" width="500">
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/9.png" alt="Выбор цвета игры" width="350">
+<figcaption>Выбор цвета игры</figcaption>
+<img src="/img/9.png" alt="Выбор цвета игры" width="500">
 
-<figcaption>Поля ввода</figcaption>
-<img src="/img/10.png" alt="Неверный ход" width="350">
+<figcaption>Неверный ход</figcaption>
+<img src="/img/10.png" alt="Неверный ход" width="500">
 
 
 ***Для запуска сайта необходимо выполнить следуещие пункты***
